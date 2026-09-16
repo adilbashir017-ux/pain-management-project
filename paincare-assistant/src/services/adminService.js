@@ -1,4 +1,4 @@
-const API_URL = "https://pain-management.onrender.com/api/users";
+const API_URL = "https://pain-management-project-t5zz.onrender.com/api/users";
 
 export async function getUsersByRole(role) {
   try {

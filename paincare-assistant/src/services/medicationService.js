@@ -1,4 +1,4 @@
-const API_URL = "https://pain-management.onrender.com/api/medications";
+const API_URL = "https://pain-management-project-t5zz.onrender.com/api/medications";
 
 export async function addMedicationReminder(medicationData) {
   try {
