@@ -121,6 +121,10 @@ pain-management-project/
 ├── paincare-assistant/             # React / Vite frontend
 ├── server/                         # Node.js / Express backend
 ├── docs/
+│   ├── screenshots/
+│   │   ├── patient-pain-report.png
+│   │   ├── ai-chatbot.png
+│   │   └── doctor-dashboard.png
 │   ├── PainCare_Project_Report.docx
 │   ├── PainCareAssistant_Assignment3.vpp
 │   └── use-case-diagram.png
