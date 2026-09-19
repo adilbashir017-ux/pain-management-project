@@ -1,36 +1,43 @@
 # PainCare Assistant
 
-A full-stack pain management platform designed to help patients track their pain, manage daily health information, and communicate relevant information with healthcare professionals.
+A full-stack web application for chronic pain tracking and pain-clinic management.
+
+PainCare Assistant allows patients to report and monitor their pain, manage medication reminders, view pain trends, communicate with an AI-assisted chatbot, and receive notes from their doctor. Doctors can monitor assigned patients through a dedicated dashboard, while administrators manage users and patient-doctor assignments.
 
 🌐 **Live Demo:**  
 https://pain-management-project-topaz.vercel.app/
+
+---
 
 ## Features
 
 ### Patient
 - Register and log in
 - Submit daily pain reports
-- Track pain history and trends
-- View pain data through graphs
+- Track pain history, trends, and statistics
 - Manage medication reminders
 - View doctor notes
 - Update personal profile information
-- Use an AI-assisted chatbot for general, non-diagnostic guidance
+- Receive guidance for high pain levels
+- Interact with an AI-assisted chatbot
+- Dark Mode support
 
 ### Doctor
 - View assigned patients
 - Review patient pain reports
-- Monitor pain trends and high-pain alerts
+- Monitor high-pain alerts
 - View patient clinical summaries
-- Review medication status
-- Add and manage doctor notes
-- Update personal profile information
+- Review pain trends and medication status
+- Add clinical notes
+- Manage doctor profile
 
 ### Admin
 - Manage doctors and patients
 - Add or remove users
 - Assign patients to doctors
-- Update patient-doctor assignments
+- Change patient-doctor assignments
+
+---
 
 ## Tech Stack
 
@@ -38,7 +45,6 @@ https://pain-management-project-topaz.vercel.app/
 - React
 - Vite
 - JavaScript
-- React Router
 - React Hooks
 - Tailwind CSS
 
@@ -54,41 +60,93 @@ https://pain-management-project-topaz.vercel.app/
 - Google Gemini API
 
 ### Deployment
-- Frontend: Vercel
-- Backend: Render
+- **Frontend:** Vercel
+- **Backend:** Render
+
+---
+
+## Architecture
+
+```text
+Patient / Doctor / Admin
+          │
+          ▼
+   React + Vite Frontend
+          │
+       REST API
+          │
+          ▼
+ Node.js + Express Backend
+       │             │
+       ▼             ▼
+    MongoDB     Google Gemini API
+```
+
+The frontend communicates with the backend through REST APIs. The backend manages application data in MongoDB and communicates with the Gemini API for chatbot functionality.
+
+---
+
+## System Use Case Diagram
+
+The diagram below illustrates the main interactions between patients, doctors, administrators, and the external Gemini AI service.
+
+![PainCare Assistant Use Case Diagram](docs/use-case-diagram.png)
+
+The editable Visual Paradigm source file is available in the `docs` directory.
+
+---
 
 ## Project Structure
 
 ```text
 pain-management-project/
-├── paincare-assistant/   # React frontend
-├── server/               # Node.js / Express backend
-├── package.json
-├── README.md
-└── use-case-diagram.png
+├── paincare-assistant/             # React / Vite frontend
+├── server/                         # Node.js / Express backend
+├── docs/
+│   ├── PainCare_Project_Report.docx
+│   ├── PainCareAssistant_Assignment3.vpp
+│   └── use-case-diagram.png
+├── .gitignore
+└── README.md
 ```
 
-## System Use Case Diagram
+---
 
-The following diagram illustrates the main interactions between patients, doctors, administrators, and the Gemini AI service.
+## Documentation
 
-![PainCare Assistant Use Case Diagram](docs/use-case-diagram.png)
+Additional project documentation and design files are available in the [`docs`](docs/) directory.
 
-## Main Purpose
+- [Project Report](docs/PainCare_Project_Report.docx)
+- [Use Case Diagram](docs/use-case-diagram.png)
+- Visual Paradigm source: `docs/PainCareAssistant_Assignment3.vpp`
 
-PainCare Assistant combines pain reporting, medication reminders, data visualization, doctor monitoring, administrative management, and AI-assisted interaction in a single full-stack web application.
-
-The platform uses a React-based frontend, a Node.js and Express backend, MongoDB for persistent data storage, and the Google Gemini API for chatbot functionality.
+---
 
 ## Project Context
 
-PainCare Assistant was developed as a team project for the **Advanced Web Technologies** course at Braude College of Engineering.
+PainCare Assistant was developed as a **team project** for the **Advanced Web Technologies (61776)** course at Braude College of Engineering.
+
+The project included requirements analysis, system architecture, database design, use-case modeling, frontend and backend development, AI integration, usability evaluation, code review, and deployment.
+
+This repository is a maintained fork of the original team repository.
+
+---
+
+## Medical Disclaimer
+
+PainCare Assistant is an educational software project and is not a certified medical system.
+
+The AI-assisted chatbot provides general, non-diagnostic guidance and should not be used as a substitute for professional medical diagnosis, treatment, or emergency medical care.
+
+---
 
 ## Live Application
 
-👉 [Open PainCare Assistant](https://pain-management-project-topaz.vercel.app/)
+👉 **[Open PainCare Assistant](https://pain-management-project-topaz.vercel.app/)**
 
-## Author
+---
+
+## Maintained By
 
 **Adel Bashir**  
 B.Sc. Software Engineering Student  
