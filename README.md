@@ -72,7 +72,7 @@ pain-management-project/
 
 The following diagram illustrates the main interactions between patients, doctors, administrators, and the Gemini AI service.
 
-![PainCare Assistant Use Case Diagram](use-case-diagram.png)
+![PainCare Assistant Use Case Diagram](docs/use-case-diagram.png)
 
 ## Main Purpose
 
