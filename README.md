@@ -38,7 +38,25 @@ https://pain-management-project-topaz.vercel.app/
 - Change patient-doctor assignments
 
 ---
+## Application Preview
 
+### Patient – Daily Pain Report
+
+Patients can record their daily pain level, location, type, duration, medication status, and additional notes for follow-up by medical staff.
+
+![Patient Daily Pain Report](docs/screenshots/patient-pain-report.png)
+
+### AI-Assisted Chatbot
+
+The patient chatbot integrates with Google Gemini to provide general, non-diagnostic guidance based on the patient's pain information.
+
+![PainCare AI Chatbot](docs/screenshots/ai-chatbot.png)
+
+### Doctor Dashboard
+
+Doctors can monitor assigned patients, review pain alerts and clinical summaries, and view patient analytics from a dedicated dashboard.
+
+![Doctor Dashboard](docs/screenshots/doctor-dashboard.png)
 ## Tech Stack
 
 ### Frontend
